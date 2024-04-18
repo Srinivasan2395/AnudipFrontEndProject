@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<style>
+  header{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:#b9daec;
+    width:100%;
+    height:130px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.header-left img{
+    width: 230px;
+    height:150px;
+    margin-right:200px;
+   
+}
+
+.search-box input{
+    width:280px;
+    height:40px;
+    border:none;
+    outline:none;
+    margin-top: 30px;
+    margin-right:200px;
+    cursor:pointer;
+    border-radius:30px;
+    background:white;
+    color:rgb(233, 228, 228);
+     font-size:16px;
+    text-align: center;
+    
+}
+
+.search-box button {
+    cursor: pointer;
+    height: 40px;
+    width:40px;
+    margin-top: 30px;
+    margin-right:320px ;
+    border-radius: 30px;
+    border:none;
+    position:absolute;
+    top:0;
+    right:0;
+    transform:scale(0.9);
+    background:rgb(40, 168, 228);
+
+}
+
+ body {      
+        
+         margin: 25px,25px,25px,25px ;
+         background-position:  25px,25px,25px,25px;
+}
+           
+   .navbar  {
+           display: flex;
+          align-items: center;
+          justify-content:space-evenly;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-size: 25px;
+          background-color: #b9daec;
+}
+h5{
+        font-style: i;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          color:darkslateblue;
+          font-weight: lighter;
+          font-size: 25px;
+}
+.center
+{
+  image-resolution: 250px;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom:20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+
+}
+
+footer .logo{
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size: 14px;
+    color:brown;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    font-size: 13px;
+    text-decoration:none;
+    color: #222;
+    margin-bottom: 10px;
+}
+footer.row{
+    width:50px;
+}
+
+footer .follow{
+    margin-top: 20px;
+}
+
+footer .follow li{
+    list-style: none;
+}
+
+footer .follow img{
+    color: #088178;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img{
+    border: 1px solid #088178;
+    height:6 px;
+    margin:8px;
+    border-radius: 6px;
+}
+footer .install img{
+    margin: 30px 0 15px 0;
+}
+footer .follow img:hover ,
+footer a:hover{
+    color: #088178;
+}
+footer .copyright{
+    width: 100%;
+    color:blue;
+    font-size: 40%;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom:20px;
+
+}
+
+footer .logo{
+    margin-bottom: 30px;
+    width:40%;
+     height:20 px; 
+}
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+}
+#newsletter p span{
+    color: #ffbd27;
+}
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+#newsletter input{
+    height: 1.125cm;
+    padding: 0 1.25cm;
+    font-size:14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    outline: none;
+    border-top-right-radius:0 ;
+    border-bottom-right-radius:0 ;
+}
+#newsletter button{
+    height: 1.125cm;
+    font-size:14px;
+    width: 50%;
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-bottom-left-radius:0 ;
+}
+
+</style>
+  </head>
+<body>
+   <!------header Section-->
+   <header>
+    <div class="header-left">
+      <img src="/sri.jpg">
+    </div>
+    <!--<div class="header-center">
+        <input class="header-center-input" type="text" placeholder="search for Product"><i class="fa-solid fa-magnifying-glass"></i>
+    </div>-->
+    <!--<input type="checkbox"  name="" id="chk1">
+    <div class="logo"><ch1></ch1></div>-->
+   
+    
+   <div class="search-box">
+      <form action="">
+        <input type="text" name="search" id="srch" placeholder="Search " ></input>
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  
+  </header>
+     
+      
+  <nav class="navbar navbar-light">
+  <nav class="navbar navbar-expand-lg  navbar-fixed-top">
+           <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="./home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./signup.html">Sign-Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./login.html">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./product.html">Product</a>
+            </li>
+        </ul>
+        </div>
+      </nav>
+      </nav>
+      <div  class="marquee">
+        <h5>
+          A used car sale is the transaction of buying or selling a previously owned vehicle. 
+          The vehicle may have been previously owned by an individual or a fleet owner, and it may have varying levels of wear and tear or mileage.
+          Used car sales can take place through a variety of channels, including licensed dealerships, online marketplaces, and private parties.
+          When buying a used car from a dealership, the vehicle typically undergoes an inspection and may come with a warranty or service plan. Private party sales, on the other hand, may not come with any guarantees or protections, so it's important for buyers to do their due diligence and thoroughly inspect the vehicle before making a purchase.
+          Regardless of where you choose to buy a used car, it's important to research the market value of the vehicle, review its history report, and take it for a test drive to ensure it's in good working condition. By taking these steps, you can make an informed decision and find a reliable and affordable used car that meets your needs.
+        </h5>
+      </div>
+      <div class="text-center">
+        <img src="/fenyr.jpg" class="rounded" alt="Image not available">
+      </div>
+      
+      
+<section id="newsletter" class="section-p1" class="section-m1">
+  <div class="newstext">
+    <h4>Sign Up For Newsletters</h4>
+    <p>Get E-mail Update about our latest offer and <span>Special Offer</span></p>
+  </div>
+  <div class="form">
+    <input type="text" placeholder="Your E-mail Address">
+    <button> Sign Up </button>
+  </div>
+</section>
+
+
+<footer class="section-p1">
+    <div class="col">
+     <img  class="logo" src="img/ourlogo.jpg" alt="">-->
+       <h4>Contact</h4>
+      <p><b>Address:</b> Chennai</p>
+      <p><b>Phone:</b> +91 123456789</p>
+      <p><b>Hours:</b>10.00 - 10.00 , Mon-Sat</p>
+     <div class="follow">
+      <h4>Follow Us</h4>
+        <li>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-pinterest"></i>
+          <i class="fab fa-youtube"></i>
+        </li>
+     </div>
+    </div>
+
+    <div class="col">
+      <h4>About</h4>
+      <a href="#">About Us</a>
+      <a href="#">Delivery Information</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+     
+    </div>
+
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+        <img src="/appstore.jpg" alt="">
+        <img src="/play.jpg" alt="">
+      </div>
+      <p> Secured Payment Gateways </p>
+      <img src="/pay.jpg" alt="">
+    </div>
+
+    <div class="copyright">
+      <p> 2024, -HTML CSS E-commerce Website</p>
+    </div>
+    </footer>
+ 
+</body>
+</html>
